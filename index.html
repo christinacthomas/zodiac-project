@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<title>Breed Match</title>
+
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cabin+Sketch|Crafty+Girls|Freckle+Face|Fredericka+the+Great|Frijole|Julius+Sans+One|Love+Ya+Like+A+Sister|Roboto" rel="stylesheet">
+
+</head>
+<body>
+
+	<header id="header">
+	<h1>Find your Best Friend!</h1>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<form>
+					<div class="form-group">
+						<h1>Enter your birthday below</h1>
+					</div>
+					<div class="form-group">
+						<input placeholder="Ex: Libra, Aquarius, etc." id="userdata" class="form-control">
+					</div>
+					<div class="form-group">
+						<!-- runs the function line 66 main.js -->
+						<button id="button" type="button" onclick="match()" class="btn btn-primary btn-lg">Submit</button>
+			
+					</div>
+
+				</form>
+
+				<div id="error"></div>
+
+				<div class="results">
+					<h1 id="yourBreed"></h1>
+					<img id="img" src="">
+					<p id="why"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
